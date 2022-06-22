@@ -34,6 +34,7 @@
     box-sizing: border-box;
     transition:all .2s linear;
     transition:width none;
+    text-transform: capitalize;
 }
 
 html{
@@ -187,6 +188,11 @@ section{
     background:var(--dark-color);
 }
 
+.navbar{
+    display: block;
+}
+
+
 .header .header-2.active{
     position:fixed;
     top:0; left:0; right:0;
@@ -212,11 +218,7 @@ section{
 .bottom-navbar a:hover{
     background:var(--dark-color);
 }
-#myCarousel {
-    height: 480px;
-    width: 200;
-    overflow: hidden;
-  }
+
 
 .home{
     background: url(https://static.vecteezy.com/system/resources/thumbnails/005/412/075/small/abstract-pastel-purple-minimal-background-for-invitation-or-banner-free-vector.jpg) no-repeat;
@@ -278,7 +280,7 @@ section{
 .icons-container .icons h3{
     font-size: 2.2rem;
     color:var(--black);
-    padding-bottom: .5rem;
+    padding-bottom: 0rem;
 }
 
 .icons-container .icons p{
@@ -287,55 +289,20 @@ section{
     
 }
 
-
-
-
-.featured .featured-slider .box{
-    margin:2rem 0;
-    position: relative;
-    overflow: hidden;
-    border:var(--border);
-    text-align: center;
+.carousel-item{
+    height:45rem;
 }
 
-.featured .featured-slider .box:hover{
-    border:var(--border-hover);
-}
+.carousel-inner > .item > img {
+    width:640px;
+    height:36px;
+  }
 
-.featured .featured-slider .box .image{
-    padding:1rem;
-    background: linear-gradient(15deg, rgb(181, 176, 176) 30%, #fff 30.1%);
-}
+  .featured{
+    padding-top: 0%;
+    padding-bottom: 0%;
+  }
 
-.featured .featured-slider .box:hover .image{
-    transform: translateY(6rem);
-}
-
-.featured .featured-slider .box .image img{
-    height: 25rem;
-}
-
-.featured .featured-slider .box .content{
-    background:#eee;
-    padding:1.5rem;
-}
-
-.featured .featured-slider .box .content h3{
-    font-size: 2rem;
-    color:var(--black);
-}
-
-.featured .featured-slider .box .content .price{
-    font-size: 2.2rem;
-    color:var(--black);
-    padding-top: 1rem;
-}
-
-.featured .featured-slider .box .content .price span{
-    font-size: 1.5rem;
-    color:var(--light-color);
-    text-decoration: line-through;
-}
 
 
 .deal{
@@ -456,12 +423,7 @@ th,td{
 	font-family: 'Poppins', sans-serif;
 }
 
-.container{
-	width: 80%;
-	display: block;
-	margin:auto;
-	padding-top: 115px;
-}
+
 .content-section{
 	float: left;
 	width: 55%;
@@ -518,12 +480,7 @@ th,td{
 	color:#3d3d3d;
 }
 @media screen and (max-width: 768px){
-	.container{
-	width: 80%;
-	display: block;
-	margin:auto;
-	padding-top:50px;
-}
+
 .content-section{
 	float:none;
 	width:100%;
