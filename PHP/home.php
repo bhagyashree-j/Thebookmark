@@ -15,6 +15,7 @@ if(!isset($_SESSION['name'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The BookMark</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -56,15 +57,8 @@ if(!isset($_SESSION['name'])){
 
     <!-- header section end -->
 
-    <nav class="bottom-navbar">
-        <a href="#home" class="fas fa-home"></a>
-        <a href="#featured" class="fas fa-list"></a>
-        <a href="#arrivals" class="fas fa-tags"></a>
-        <a href="#reviews" class="fas fa-comments"></a>
-        <a href="#blogs" class="fas fa-blog"></a>
-    </nav>
 
-    <h1><?php echo "Hello ".$_SESSION['name']."!"; ?></h1>
+    <h1 style="margin-left:30px"><?php echo "Hello ".$_SESSION['name']."!"; ?></h1>
 
     <!-- home section starts  -->
     <section class="home" id="home">
@@ -73,10 +67,10 @@ if(!isset($_SESSION['name'])){
 
             <div class="content">
                 
-                <h3>upto 75% off</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deserunt nostrum accusamus. Nam alias
-                    sit necessitatibus, aliquid ex minima at!</p>
-                <a href="#featured" class="btn">shop now</a>
+                <h3>Upto 75% off</h3>
+                <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Magnam Deserunt Nostrum Accusamus. Nam Alias
+                    Sit Necessitatibus, Aliquid Ex Minima At!</p>
+                <a href="#featured" class="btn">Shop Now</a>
             </div>
 
             <div class="swiper books-slider">
@@ -168,98 +162,55 @@ if(!isset($_SESSION['name'])){
 
         <h1 class="heading"> <span>featured books</span> </h1>
 
-        <div class="swiper featured-slider">
+    </section>
 
-            <div class="swiper-wrapper">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <div class="swiper-slide box">
-                                <div class="image">
-                                    <img src="https://images-na.ssl-images-amazon.com/images/I/81IzbD2IiIL.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <h3>The Kite Runner</h3>
-                                    <div class="price">Rs 250<span>Rs 370</span></div>
-                                    <a href="#" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="item">
-                            <div class="swiper-slide box">
-                                <div class="image">
-                                    <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1470082995i/29056083.jpg"
-                                        alt="">
-                                </div>
-                                <div class="content">
-                                    <h3>Harry Potter and the cursed child</h3>
-                                    <div class="price">Rs 320 <span>Rs 480</span></div>
-                                    <a href="#" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="swiper-slide box">
-                                <div class="image">
-                                    <img src="https://kbimages1-a.akamaihd.net/7165f0d7-a437-4313-8294-68cfcaf3d717/1200/1200/False/sapiens-5.jpg"
-                                        alt="">
-                                </div>
-                                <div class="content">
-                                    <h3>Sapiens</h3>
-                                    <div class="price">Rs 800<span>Rs 1200</span></div>
-                                    <a href="#" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="swiper-slide box">
-                                <div class="image">
-                                    <img src="https://images-na.ssl-images-amazon.com/images/I/412x5bm0IpL._SX301_BO1,204,203,200_.jpg"
-                                        alt="">
-                                </div>
-                                <div class="content">
-                                    <h3>Tuesdays With Morrie</h3>
-                                    <div class="price">Rs 400 <span>Rs 550</span></div>
-                                    <a href="#" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="swiper-slide box">
-                                <div class="image">
-                                    <img src="https://images-na.ssl-images-amazon.com/images/I/71aFt4+OTOL.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <h3>The alchemist</h3>
-                                    <div class="price">Rs 560 <span>Rs 616</span></div>
-                                    <a href="#" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="item">
-                            <div class="swiper-slide box">
-                                <div class="image">
-                                    <img src="https://m.media-amazon.com/images/I/41HXEG13EKL.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <h3>Cant hurt me</h3>
-                                    <div class="price">Rs 700 <span>Rs 970</span></div>
-                                    <a href="#" class="btn">add to cart</a>
-                                </div>
-                            </div>
-                        </div>
+    <section>
+        <div class="container-fluid">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://img.freepik.com/free-psd/book-table_123684-2.jpg?w=2000" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="https://img.freepik.com/free-psd/red-hard-cover-book-mockup_23-2149169385.jpg?w=2000" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="https://img.freepik.com/free-vector/creative-corporate-annual-report-book-cover-design-template_548438-25.jpg?w=2000" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="https://img.freepik.com/free-vector/creative-corporate-annual-report-book-cover-design-template_548438-25.jpg?w=2000" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="https://img.freepik.com/free-vector/creative-corporate-annual-report-book-cover-design-template_548438-25.jpg?w=2000" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="https://img.freepik.com/free-vector/creative-corporate-annual-report-book-cover-design-template_548438-25.jpg?w=2000" alt="Third slide">
+                    </div>
+                    <div class="carousel-item">
+                    <img class="d-block w-100" src="https://img.freepik.com/free-vector/creative-corporate-annual-report-book-cover-design-template_548438-25.jpg?w=2000" alt="Third slide">
                     </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
-        </div>
-
+        </div>  
     </section>
-    <!-- featured section ends  -->
 
     <!-- deal section starts  -->
 
@@ -343,7 +294,9 @@ if(!isset($_SESSION['name'])){
 
 
 
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="thebookmark.js"></script>
 
 </body>
