@@ -29,8 +29,8 @@
         </div>
         <div class="header-2">
             <nav class="navbar">
-                <a href="home.php">home</a>
-                <a href="#featured">featured</a>
+                <a href="home.php">Home</a>
+                <a href="#featured">Featured</a>
                 <a href="#deal">Deals</a>
                 <a href="aboutus.php">About us</a>
                 <a href="contactus.php">Contact us</a>
