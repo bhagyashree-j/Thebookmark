@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <--Navbar-->
+    <!--Navbar-->
         
     <div class="banner">
         <div class="navbar">
@@ -21,7 +21,7 @@
         <p>Login or Register to shop with us</p>
         <div>
             
-     <--Login and Register Buttons-->
+     <!--Login and Register Buttons-->
             <a href="../PHP/login.php">
                 <button type="button"><span></span>LOGIN</button>
             </a>
