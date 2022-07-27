@@ -42,7 +42,7 @@
         </div>
 
 	    
-    <--Content Section-->
+    <!--Content Section-->
     </header>
     <div class="section">
 		<div class="container">
