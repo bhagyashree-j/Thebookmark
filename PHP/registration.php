@@ -21,7 +21,7 @@ $con = mysqli_connect('localhost','root','','bookmark') or die(mysql_error($con)
 </head>
 
 <body>
-    <--Navbar-->
+    <!--Navbar-->
     <div class="top">
         <header class="header">
             <header class="header">
@@ -32,9 +32,9 @@ $con = mysqli_connect('localhost','root','','bookmark') or die(mysql_error($con)
             </header>
         </header>
     </div>
-    <--Navbar ends-->
+    <!--Navbar ends-->
         
-    <--Registration Form-->
+    <!--Registration Form-->
     <form method = "post" action = "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" class="register">
         <h2 class="title">Register your account</h2>
         <div class="form-group">
@@ -89,7 +89,7 @@ $con = mysqli_connect('localhost','root','','bookmark') or die(mysql_error($con)
     </form>
     </div>
     </div>
-    <--Registration Form ends-->  
+    <!--Registration Form ends-->  
 
     <?php
 
