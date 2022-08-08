@@ -64,7 +64,7 @@ if (!isset($_SESSION['email'])) {
         <!--Change password-->
         <div class=" container">
             <form method="post" action="change_password.php">
-                <div class="panel  panel-primary panelbg">
+                <div class="panel  panel-danger">
                     <div class="panel-heading">
                         <center>
                             <h3>Change Password
@@ -91,6 +91,7 @@ if (!isset($_SESSION['email'])) {
                             placeholder="Confirm your password" pattern=".{6,}" required>
                     </div>
                     <center>
+                         <button class="btn"> <a href="profile.php">Back</a></button>
                         <button type="submit" class="btn btnclr" name="submit">Change
                         </button>
                     </center>
